@@ -73,7 +73,7 @@
 
 - (void)showAlertController
 {
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Oops!" message:@"You must enter a username" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Oops!" message:@"You must enter a username" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];

@@ -51,6 +51,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    // Either show list of users or show loading / failure message
     return self.users.count ?: 1;
 }
 
