@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1F43503A15458F71B73A74EC /* Pods-MDSUserList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDSUserList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDSUserList/Pods-MDSUserList.release.xcconfig"; sourceTree = "<group>"; };
 		724FF4FC9EB68B0D3A6873F3 /* libPods-MDSUserList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDSUserList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		810EE2CB23195CF90050B13A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8173FF2223180BF800BDC5F0 /* MDSUserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDSUserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8173FF2523180BF800BDC5F0 /* MDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSAppDelegate.h; sourceTree = "<group>"; };
 		8173FF2623180BF800BDC5F0 /* MDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDSAppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		8173FF1923180BF800BDC5F0 = {
 			isa = PBXGroup;
 			children = (
+				810EE2CB23195CF90050B13A /* README.md */,
 				8173FF2423180BF800BDC5F0 /* MDSUserList */,
 				8173FF2323180BF800BDC5F0 /* Products */,
 				63705123577DC91F4BBF0D52 /* Pods */,
@@ -178,17 +180,17 @@
 				8173FF4723180F7000BDC5F0 /* MDSAppAPI.m */,
 				8173FF4323180D0E00BDC5F0 /* MDSNetworkConstants.h */,
 				8173FF4423180D0E00BDC5F0 /* MDSNetworkConstants.m */,
-				8173FF56231818E600BDC5F0 /* API Modules */,
+				8173FF56231818E600BDC5F0 /* Managers */,
 			);
 			name = API;
 			sourceTree = "<group>";
 		};
-		8173FF56231818E600BDC5F0 /* API Modules */ = {
+		8173FF56231818E600BDC5F0 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				8173FF57231818F300BDC5F0 /* Users */,
 			);
-			name = "API Modules";
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		8173FF57231818F300BDC5F0 /* Users */ = {

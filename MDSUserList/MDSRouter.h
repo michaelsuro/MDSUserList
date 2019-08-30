@@ -12,8 +12,6 @@
 
 + (void)setup;
 
-#pragma mark - Get First Page of User Data
-
 + (NSURLRequest *)getFirstPageOfUserData;
 
 

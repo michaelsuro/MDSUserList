@@ -23,20 +23,6 @@ static AFHTTPSessionManager *staticHTTPClient = nil;
     staticHTTPClient = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
     staticHTTPClient.requestSerializer = [AFJSONRequestSerializer serializer];
     [staticHTTPClient.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
-    [staticHTTPClient.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        switch (status) {
-            case AFNetworkReachabilityStatusUnknown:
-                NSLog(@"network reachability unknown");
-                break; 
-            case AFNetworkReachabilityStatusNotReachable:
-                NSLog(@"network is not reachable");
-                break;
-            default:
-                NSLog(@"network is reachable");
-                break;
-        }
-    }];
 }
 
 + (NSMutableURLRequest *)requestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)params
@@ -52,7 +38,10 @@ static AFHTTPSessionManager *staticHTTPClient = nil;
 }
 
 
-#pragma mark - Get First Page of User Data
+#pragma mark - NSURLRequest Builders
+
+
+#pragma mark - User Data
 
 + (NSURLRequest *)getFirstPageOfUserData
 {
